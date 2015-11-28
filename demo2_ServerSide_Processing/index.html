@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Datatables - Server-Side processing using PHP&MySQL and Ajax|RefreshMyMind.Com</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css"/>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<h1>Data Source : Server-Side processing using PHP&MySQL and Ajax</h1>
+<table cellpadding="1" cellspacing="1" id="users" class="display" width="100%">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>PHONE</th>
+        <th>Email</th>
+        <th>Country</th>
+        <th>ZIP Code</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>PHONE</th>
+        <th>Email</th>
+        <th>Country</th>
+        <th>ZIP Code</th>
+    </tr>
+    </tfoot>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#users').DataTable({
+            "columns": [
+                {"data": "id"},
+                {"data": "name"},
+                {"data": "phone"},
+                {"data": "email"},
+                {"data": "country"},
+                {"data": "zip"}
+            ],
+            "processing": true,
+            "serverSide": true,
+            "ajax": {
+                url: 'demo2.php',
+                type: 'POST'
+            }
+        });
+    });
+</script>
+</body>
+</html>

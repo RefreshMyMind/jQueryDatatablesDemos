@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Datatables - HTML DOM DataSource | RefreshMyMind.Com</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css"/>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<h1>Data Source : HTML DOM</h1>
+<table cellpadding="1" cellspacing="1" id="datatable" class="display" width="100%">
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>City</th>
+    <th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Ivor Hoffman</td>
+    <td>536-6253</td>
+    <td>Alwar</td>
+    <td>turpis.nec.mauris@risusatfringilla.com</td>
+</tr>
+<tr>
+    <td>Ishmael Floyd</td>
+    <td>1-942-871-2272</td>
+    <td>Neuville-en-Condroz</td>
+    <td>eu.dui.Cum@auctornuncnulla.edu</td>
+</tr>
+<tr>
+    <td>Deacon Reyes</td>
+    <td>1-742-362-7182</td>
+    <td>Draguignan</td>
+    <td>vulputate.lacus@bibendumDonecfelis.edu</td>
+</tr>
+<tr>
+    <td>Abbot Gonzalez</td>
+    <td>1-533-214-5770</td>
+    <td>Milano</td>
+    <td>arcu@Integerin.com</td>
+</tr>
+<tr>
+    <td>Stuart Deleon</td>
+    <td>1-775-394-1565</td>
+    <td>Ceranesi</td>
+    <td>sed.orci@loremeumetus.co.uk</td>
+</tr>
+<tr>
+    <td>Joseph Davenport</td>
+    <td>1-448-441-4393</td>
+    <td>Fort Providence</td>
+    <td>purus.Duis@risusMorbi.co.uk</td>
+</tr>
+<tr>
+    <td>Ian Mclean</td>
+    <td>458-2227</td>
+    <td>Coquitlam</td>
+    <td>eleifend.nec@vitaepurus.com</td>
+</tr>
+<tr>
+    <td>Jameson Cole</td>
+    <td>1-475-205-1124</td>
+    <td>Maple Creek</td>
+    <td>lectus@auctorquis.edu</td>
+</tr>
+<tr>
+    <td>Tyrone Campos</td>
+    <td>1-786-898-6833</td>
+    <td>Lincoln</td>
+    <td>Cum.sociis@Etiam.co.uk</td>
+</tr>
+<tr>
+    <td>Tarik Barlow</td>
+    <td>1-453-487-7307</td>
+    <td>Großpetersdorf</td>
+    <td>tempus@loremvitaeodio.ca</td>
+</tr>
+<tr>
+    <td>Luke Hammond</td>
+    <td>561-0844</td>
+    <td>Barghe</td>
+    <td>pharetra.felis@arcuVestibulum.ca</td>
+</tr>
+<tr>
+    <td>Hammett Drake</td>
+    <td>1-862-281-3569</td>
+    <td>Montecarotto</td>
+    <td>orci.adipiscing.non@ante.edu</td>
+</tr>
+<tr>
+    <td>Tobias Bartlett</td>
+    <td>1-685-603-5143</td>
+    <td>Valcourt</td>
+    <td>adipiscing@orci.org</td>
+</tr>
+<tr>
+    <td>Rashad Gibson</td>
+    <td>1-915-109-8972</td>
+    <td>Leamington</td>
+    <td>ullamcorper.magna@nonlaciniaat.co.uk</td>
+</tr>
+<tr>
+    <td>Troy Haynes</td>
+    <td>1-729-231-2476</td>
+    <td>Elmshorn</td>
+    <td>velit.Sed@Lorem.co.uk</td>
+</tr>
+<tr>
+    <td>Gil Burgess</td>
+    <td>1-493-264-3129</td>
+    <td>Etterbeek</td>
+    <td>Sed@diamvelarcu.org</td>
+</tr>
+<tr>
+    <td>Oliver Rice</td>
+    <td>127-4386</td>
+    <td>Kozan</td>
+    <td>commodo.ipsum@vitae.org</td>
+</tr>
+<tr>
+    <td>Thor Reeves</td>
+    <td>311-4983</td>
+    <td>Meridian</td>
+    <td>enim@vulputateullamcorpermagna.net</td>
+</tr>
+<tr>
+    <td>Byron Herman</td>
+    <td>1-927-180-4296</td>
+    <td>Kawerau</td>
+    <td>Mauris.magna.Duis@dapibus.com</td>
+</tr>
+<tr>
+    <td>Dante Hunter</td>
+    <td>697-3615</td>
+    <td>Surrey</td>
+    <td>ullamcorper@loremutaliquam.edu</td>
+</tr>
+<tr>
+    <td>Uriah Curtis</td>
+    <td>175-3133</td>
+    <td>Linlithgow</td>
+    <td>eget.magna.Suspendisse@dictumeu.edu</td>
+</tr>
+<tr>
+    <td>Dieter Clemons</td>
+    <td>658-3501</td>
+    <td>Sgonico</td>
+    <td>consequat.enim@acrisus.co.uk</td>
+</tr>
+<tr>
+    <td>Macon Campbell</td>
+    <td>760-1762</td>
+    <td>Pitt Meadows</td>
+    <td>amet.orci@laciniaSedcongue.ca</td>
+</tr>
+<tr>
+    <td>Rooney Richard</td>
+    <td>1-996-276-4803</td>
+    <td>Ingolstadt</td>
+    <td>erat@augue.net</td>
+</tr>
+<tr>
+    <td>Darius Sheppard</td>
+    <td>1-717-252-8279</td>
+    <td>Davangere</td>
+    <td>sem@dictumplacerataugue.edu</td>
+</tr>
+<tr>
+    <td>Uriel Burris</td>
+    <td>1-538-931-3803</td>
+    <td>Ussassai</td>
+    <td>a.malesuada.id@vestibulum.com</td>
+</tr>
+<tr>
+    <td>Noah Church</td>
+    <td>435-2873</td>
+    <td>Zerkegem</td>
+    <td>odio.semper@antebibendum.org</td>
+</tr>
+<tr>
+    <td>Rigel Lamb</td>
+    <td>1-143-425-1803</td>
+    <td>Bottrop</td>
+    <td>id.ante.Nunc@et.net</td>
+</tr>
+<tr>
+    <td>Owen Goodwin</td>
+    <td>229-8775</td>
+    <td>Fossato Serralta</td>
+    <td>a.felis.ullamcorper@neceleifend.ca</td>
+</tr>
+<tr>
+    <td>Akeem Buckley</td>
+    <td>604-4499</td>
+    <td>Orlando</td>
+    <td>cubilia.Curae@nibhQuisquenonummy.edu</td>
+</tr>
+<tr>
+    <td>Jared Barton</td>
+    <td>1-657-603-0862</td>
+    <td>Bilaspur</td>
+    <td>Sed.nulla.ante@acfermentum.com</td>
+</tr>
+<tr>
+    <td>Elliott Mathis</td>
+    <td>1-727-153-3713</td>
+    <td>Salzwedel</td>
+    <td>vitae.mauris@etcommodo.org</td>
+</tr>
+<tr>
+    <td>Alden Sharpe</td>
+    <td>1-401-652-8283</td>
+    <td>Ortonovo</td>
+    <td>Vestibulum.ante@SuspendissesagittisNullam.net</td>
+</tr>
+<tr>
+    <td>Baxter Guerrero</td>
+    <td>1-309-759-5980</td>
+    <td>Vanderhoof</td>
+    <td>vitae.sodales.nisi@Nullamfeugiat.ca</td>
+</tr>
+<tr>
+    <td>Nigel Rivera</td>
+    <td>1-300-782-3721</td>
+    <td>Clarksville</td>
+    <td>at.velit.Cras@Craseutellus.ca</td>
+</tr>
+<tr>
+    <td>Brian Britt</td>
+    <td>735-3396</td>
+    <td>Donosti</td>
+    <td>at.libero@neque.edu</td>
+</tr>
+<tr>
+    <td>Alvin Roberts</td>
+    <td>1-600-656-0817</td>
+    <td>Kalgoorlie-Boulder</td>
+    <td>convallis@actellus.edu</td>
+</tr>
+<tr>
+    <td>Demetrius House</td>
+    <td>1-137-641-1709</td>
+    <td>Rea</td>
+    <td>magna.Nam.ligula@tincidunt.co.uk</td>
+</tr>
+<tr>
+    <td>Acton Burns</td>
+    <td>682-8131</td>
+    <td>New Sarepta</td>
+    <td>ligula.elit.pretium@erat.edu</td>
+</tr>
+<tr>
+    <td>Orson Decker</td>
+    <td>1-509-748-2817</td>
+    <td>W�rzburg</td>
+    <td>id@consectetuercursuset.net</td>
+</tr>
+<tr>
+    <td>Kevin Brock</td>
+    <td>1-532-268-9281</td>
+    <td>Newcastle-upon-Tyne</td>
+    <td>eu.tempor.erat@vitae.com</td>
+</tr>
+<tr>
+    <td>Chancellor Mann</td>
+    <td>1-730-367-0452</td>
+    <td>Karlsruhe</td>
+    <td>dolor.Fusce.mi@laoreet.net</td>
+</tr>
+<tr>
+    <td>Alec Cleveland</td>
+    <td>473-1294</td>
+    <td>Armadale</td>
+    <td>netus@vulputate.ca</td>
+</tr>
+
+</tbody>
+<tfoot>
+<tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>City</th>
+    <th>Email</th>
+</tr>
+</tfoot>
+</table>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#datatable').DataTable();
+    });
+</script>
+</body>
+</html>
