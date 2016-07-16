@@ -2,7 +2,7 @@
 
 class DbManager
 {
-    private $mysqli;
+    private $db;
     private $table_name;
 
     public function __construct()
