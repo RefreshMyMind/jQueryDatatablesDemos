@@ -8,7 +8,8 @@
     <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
-<h1>Data Source : HTML DOM</h1>
+<h1>Datatables : State Saving using html5 localStorage</h1>
+
 <table cellpadding="1" cellspacing="1" id="datatable" class="display" width="100%">
 <thead>
 <tr>
@@ -292,7 +293,12 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#datatable').DataTable();
+        $('#datatable').DataTable(
+                {
+                    stateSave: true //enable state saving (pagination,search per column,current page, search inputs....à
+                    //stateDuration:-1   // to enable sessionStorage instead of localStorage
+                }
+        );
     });
 </script>
 </body>

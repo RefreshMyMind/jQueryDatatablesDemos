@@ -2,13 +2,13 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Datatables - HTML DOM DataSource | RefreshMyMind.Com</title>
+    <title>Datatables - State Saving in MySQL DB using PHP and Ajax | RefreshMyMind.Com</title>
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"/>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
-<h1>Data Source : HTML DOM</h1>
+<h1>Datatables State Saving using ajax,PHP and MySQL</h1>
 <table cellpadding="1" cellspacing="1" id="datatable" class="display" width="100%">
 <thead>
 <tr>
@@ -292,7 +292,40 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#datatable').DataTable();
+        $('#datatable').DataTable(
+                {
+                    stateSave: true, //enable state saving (pagination,search per column,current page, search inputs....à
+                    "stateSaveCallback": function (settings, data) {
+                        // Send an Ajax request to the server with the state object
+                        $.ajax( {
+                            "url": "dbManager.php?action=save",
+                            "data": {"name":"myKey", "state": data} ,//you can use the id of the datatable as key if it's unique
+                            "dataType": "json",
+                            "type": "POST",
+                            "success": function () {}
+                        } );
+                    },
+                    "stateLoadCallback": function (settings) {
+                        var o;
+
+                        // Send an Ajax request to the server to get the data. Note that
+                        // this is a synchronous request since the data is expected back from the
+                        // function
+                        $.ajax( {
+                            "url": "dbManager.php?action=load",
+                            "data":{"name":"myKey"},
+                            "async": false,
+                            "dataType": "json",
+                            "type": "POST",
+                            "success": function (json) {
+                                o = json;
+                            }
+                        } );
+
+                        return o;
+                    }
+                }
+        );
     });
 </script>
 </body>
