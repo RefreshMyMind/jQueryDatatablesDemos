@@ -1,4 +1,5 @@
 # jQueryDatatablesDemos
-A tutorial about jQuery Datatables using two Data sources : HTML DOM and MySQL&PHP&Ajax <br>
-<a href="http://refreshmymind.com/datatables-dom-php-ajax-mysql-datasources">&copy;RefreshMyMind.com</a>
-
+Tutorials about jQuery Datatables plugin:
+Tutorial 1: <a href="http://refreshmymind.com/datatables-dom-php-ajax-mysql-datasources/">jQuery Datatables using HTML DOM and MySQL DataSources</a><br>
+Tutorial 2: <a href="http://refreshmymind.com/datatables-state-saving-client-server-side/">jQuery Datatables State Saving Client and server side</a><br>
+<a href="http://refreshmymind.com">&copy;RefreshMyMind.com</a>
